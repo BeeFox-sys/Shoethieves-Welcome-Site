@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body{
+    background-color: #353535;
+    padding-bottom: 5em;
+    padding: .3em;
+}
+.content{
+    max-width: 900px;
+    margin: auto;
+    color: #eee;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Lora","Courier New",monospace,serif;
+    cursor: default;
+}
+
+h1{
+    color: #ffce0a;
+}
+h2{
+    color: #1E91CC;
+}
+a{
+    color: #1E91CC;
+    text-decoration: none;
+}
+ol, ul{
+    text-align: left;
+    width: 70%;
+    margin: auto;
+    line-height: 1.5;
+    background-color: #eee1;
+    border-radius: .5em;
+    padding: .3em;
+    padding-left: 1.5em;
+    padding-right: .4em;
+}
+
+li{
+    padding: .5em 0;
+}
+
+
+h6 {
+    font-weight: normal;
+    color: #ffce0a;
+}
+.spoiler{
+    color: #0000;
+    background-color: #000;
+    border-radius: .4em;
+    padding: .1em;
+    cursor: pointer;
+}
+.spoiler.show{
+    color: #eee;
+    background-color: #0004;
+}
+a.channel{
+    background-color: rgba(114,137,218,.1);
+    color: #7289da;
+    display: inline-block;
+    padding: 0 2px;
+    border-radius: 4px;
+}
+
+hr.short{
+    width: 5em;
+}
+
+/* dt:before {
+    content: "👟 "
+}
+dd:before{
+    content: "👞 "
+} */
+
+img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+ }
+
+@media only screen and (max-width: 600px) {
+    ol, ul {
+        width: 90%;
+        padding-left: 1.1em;
+        padding-right: 0;
+    }
+  }
