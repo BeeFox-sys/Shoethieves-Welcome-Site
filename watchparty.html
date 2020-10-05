@@ -19,8 +19,26 @@
     <meta property="og:image" content="https://shoethieves.neocities.org/running-shoe.png">
     <meta property="twitter:image" content="https://shoethieves.neocities.org/running-shoe.png">
 
+    <script>
+        function emojify(){twemoji.parse(document.body, 
+            {
+                folder: 'svg',
+                ext:'.svg',
+                callback: function(icon, options, variant) {
+                    switch ( icon ) {
+                        case 'a9':      // © copyright
+                        case 'ae':      // ® registered trademark
+                        case '2122':    // ™ trademark
+                            return false;
+                    }
+                    return ''.concat(options.base, options.size, '/', icon, options.ext);
+                }
+            });
+        }
+    </script>
+
 </head>
-<body onload="twemoji.parse(document.body);">
+<body onload="emojify()">
     <div class="content">
         <h2>Welcome to</h2>
         <h1>The Shoe Thieves Channel</h1>

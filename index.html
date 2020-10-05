@@ -19,8 +19,26 @@
     <meta property="og:image" content="https://shoethieves.neocities.org/running-shoe.png">
     <meta property="twitter:image" content="https://shoethieves.neocities.org/running-shoe.png">
 
+    <script>
+        function emojify(){twemoji.parse(document.body, 
+            {
+                folder: 'svg',
+                ext:'.svg',
+                callback: function(icon, options, variant) {
+                    switch ( icon ) {
+                        case 'a9':      // © copyright
+                        case 'ae':      // ® registered trademark
+                        case '2122':    // ™ trademark
+                            return false;
+                    }
+                    return ''.concat(options.base, options.size, '/', icon, options.ext);
+                }
+            });
+        }
+    </script>
+
 </head>
-<body onload="twemoji.parse(document.body);">
+<body onload="emojify()">
     <div class="content">
         <h2>Welcome to</h2>
         <h1>The Shoe Thieves Channel</h1>
@@ -53,7 +71,7 @@
         <h2>Who's On First?</h2>
         <p><b>🚗 Getaway Drivers:</b> Getaway Drivers are volunteers to help the channels stay chill! As we do not have captains, the getaway drivers work to make sure everyone is feeling okay in the chat with regular vibe checks.<br>Getaway drivers are also here to help people feel more comfortable! If you feel uncomfortable, but want to stay anonamys, you can message a getaway driver so that they can bring the issue up in the channel! Your name will be kept seceret even from other getaway drivers. To become a getaway driver, simply put "!🚗" (or any other vehicle) at the start of your name.</p>
         <p><b>Our current getaway drivers are:</b> @BeeFox#7767 @Patchwork-Quilts#7604 @Good Night Leafy-head#7648</p>
-        <p><b>👂 Ambassadors:</b> Ambassadors are a group of represntitives for the shoe thieves in server wide decisions, as we (sadly) can't have all shoe thieves in the captains chat. These people hold no extra power over other thieves, and their job is to communicate with the thieves, the captains of other teams, and the keepers, to help blaseball be a better place. Primarily they help with inter-team communiaction, for example if you are trying to get info from another team, you can ask them to communicate that! Ambassadors were chosen via thieves putting forward who they think would be a good ambassador, and then the keepers picking from that list. If you need an ambassador to pass something along, you can ping @amb - shoethieves</p>
+        <p><b>👂 Ambassadors:</b> Ambassadors are a group of representatives for the shoe thieves in server wide decisions, as we (sadly) can't have all shoe thieves in the captains chat. These people hold no extra power over other thieves, and their job is to communicate with the thieves, the captains of other teams, and the keepers, to help blaseball be a better place. Primarily they help with inter-team communiaction, for example if you are trying to get info from another team, you can ask them to communicate that! Ambassadors were chosen via thieves putting forward who they think would be a good ambassador, and then the keepers picking from that list. If you need an ambassador to pass something along, you can ping @amb - shoethieves</p>
         <p><b>Our current Ambassadors are:</b> @Needle#2098 @AllGoodDogs#8888 @Fuefos#6282 @homekeys#8888 @strongforecheck#7069 @BeeFox#7767</p>
 
         <p>#️⃣ Channels: The thieves team has three channels, more info of which can be found on these pages:</p> 
